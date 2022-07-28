@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f316d240-9d03-4943-90c0-9b6397425d52" name="Default Changelist" comment="nacos discovery">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider-consumer-api/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider-consumer-api/src/main/java/com/beamofsoul/test/demo/feign/EchoFeign.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider-consumer-api/target/classes/com/beamofsoul/test/demo/feign/EchoFeign$EchoFeignFallback.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider-consumer-api/target/classes/com/beamofsoul/test/demo/feign/EchoFeign.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-consumer/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-consumer/src/main/java/com/beamofsoul/test/demo/ConsumerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-consumer/src/main/java/com/beamofsoul/test/demo/ConsumerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-consumer/src/main/java/com/beamofsoul/test/demo/RestTemplateConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-consumer/src/main/resources/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-consumer/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-consumer/target/classes/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-consumer/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-consumer/target/classes/com/beamofsoul/test/demo/ConsumerApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-consumer/target/classes/com/beamofsoul/test/demo/ConsumerController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-consumer/target/classes/com/beamofsoul/test/demo/RestTemplateConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-provider/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-provider/src/main/java/com/beamofsoul/test/demo/EchoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-provider/src/main/java/com/beamofsoul/test/demo/ProviderApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-provider/src/main/resources/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-provider/src/main/resources/application-prod.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-provider/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-provider/target/classes/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-provider/target/classes/application-prod.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-provider/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-provider/target/classes/com/beamofsoul/test/demo/EchoController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-provider/target/classes/com/beamofsoul/test/demo/ProviderApplication.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="beamofsoul" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2CTGjejZQJx3tRL8BwLxf6VZexy" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/service-user/src/main/resources" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Workspace_IDEA\spring-cloud-alibaba-demo\service-user\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="MavenRunConfiguration" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.ConsumerApplication">
+    <configuration name="ConsumerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true">
+      <module name="service-consumer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.beamofsoul.test.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.beamofsoul.test.demo.ConsumerApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProviderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" singleton="false" temporary="true" nameIsGenerated="true">
+      <module name="service-provider" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.beamofsoul.test.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.beamofsoul.test.demo.ProviderApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.ProviderApplication" />
+      <item itemvalue="Spring Boot.ConsumerApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.ConsumerApplication" />
+        <item itemvalue="Spring Boot.ProviderApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpringBeansView">
+    <option name="showImplicitBeans" value="false" />
+    <option name="showInfrastructureBeans" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f316d240-9d03-4943-90c0-9b6397425d52" name="Default Changelist" comment="" />
+      <created>1658819297440</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1658819297440</updated>
+      <workItem from="1658819298733" duration="16060000" />
+      <workItem from="1658983859672" duration="1908000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="nacos discovery" />
+    <option name="LAST_COMMIT_MESSAGE" value="nacos discovery" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="539" y="23" key="#ConsumerApplication_(1)" timestamp="1658829167838">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="539" y="23" key="#ConsumerApplication_(1)/0.0.1920.1040@0.0.1920.1040" timestamp="1658829167838" />
+    <state x="312" y="0" key="#Project_Structure" timestamp="1658819786319">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="312" y="0" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1658819786319" />
+    <state x="410" y="166" width="1117" height="708" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1658826602311">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="410" y="166" width="1117" height="708" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1658826602311" />
+    <state x="718" y="166" key="#com.intellij.ide.util.MemberChooser" timestamp="1658827949444">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="718" y="166" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1658827949444" />
+    <state x="344" y="23" key="CommitChangelistDialog2" timestamp="1658985769470">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="344" y="23" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1658985769470" />
+    <state x="738" y="421" key="Github.CreateGistDialog" timestamp="1658984590274">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="738" y="421" key="Github.CreateGistDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1658984590274" />
+    <state width="1280" height="267" key="GridCell.Tab.0.bottom" timestamp="1658841623480">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1280" height="267" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1658841623480" />
+    <state width="1280" height="267" key="GridCell.Tab.0.center" timestamp="1658841623480">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1280" height="267" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1658841623480" />
+    <state width="1280" height="267" key="GridCell.Tab.0.left" timestamp="1658841623480">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1280" height="267" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1658841623480" />
+    <state width="1280" height="267" key="GridCell.Tab.0.right" timestamp="1658841623480">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1280" height="267" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1658841623480" />
+    <state width="1280" height="267" key="GridCell.Tab.1.bottom" timestamp="1658841623480">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1280" height="267" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1658841623480" />
+    <state width="1280" height="267" key="GridCell.Tab.1.center" timestamp="1658841623480">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1280" height="267" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1658841623480" />
+    <state width="1280" height="267" key="GridCell.Tab.1.left" timestamp="1658841623480">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1280" height="267" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1658841623480" />
+    <state width="1280" height="267" key="GridCell.Tab.1.right" timestamp="1658841623480">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1280" height="267" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1658841623480" />
+    <state x="374" y="91" key="Maven.ArtifactSearchDialog" timestamp="1658819462583">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="374" y="91" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1658819462583" />
+    <state x="344" y="0" key="SettingsEditor" timestamp="1658984579365">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="344" y="0" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1658984579365" />
+    <state x="589" y="195" width="742" height="650" key="find.popup" timestamp="1658819359300">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="589" y="195" width="742" height="650" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1658819359300" />
+    <state x="716" y="352" key="git4idea.rebase.GitRebaseDialog" timestamp="1658984923701">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="716" y="352" key="git4idea.rebase.GitRebaseDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1658984923701" />
+    <state x="714" y="406" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1658985357418">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="714" y="406" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1658985357418" />
+    <state x="693" y="392" key="git4idea.ui.GitResetDialog" timestamp="1658984770083">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="693" y="392" key="git4idea.ui.GitResetDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1658984770083" />
+    <state x="570" y="102" key="new project wizard" timestamp="1658827401763">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="570" y="102" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1658827401763" />
+    <state x="532" y="237" key="run.anything.popup" timestamp="1658820495230">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="532" y="237" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1658820495230" />
+  </component>
+</project>
