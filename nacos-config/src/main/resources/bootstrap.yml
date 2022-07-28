@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: nacos-config
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+      config:
+        file-extension: yaml
+        # BeanAutoRefreshConfigExample Data
+        server-addr: localhost:8848
+        group: DEFAULT_GROUP
+        prefix: ${spring.application.name}
+        namespace: public
+        # ShareConfigExample Data
+        shared-configs[0]:
+          data-id: data-source.yaml
+          refresh: true
+        # ExtensionConfigExample Data
+        extension-configs[0]:
+          data-id: ext-data-source.yaml
+          refresh: true

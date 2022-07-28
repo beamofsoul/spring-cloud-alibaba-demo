@@ -13,6 +13,7 @@
         <module>service-provider</module>
         <module>service-consumer</module>
         <module>provider-consumer-api</module>
+        <module>nacos-config</module>
     </modules>
 
     <properties>
@@ -84,6 +85,10 @@
                         <exclude>
                             <groupId>org.projectlombok</groupId>
                             <artifactId>lombok</artifactId>
+                        </exclude>
+                        <exclude>
+                            <groupId>org.springframework.boot</groupId>
+                            <artifactId>spring-boot-configuration-processor</artifactId>
                         </exclude>
                     </excludes>
                 </configuration>
