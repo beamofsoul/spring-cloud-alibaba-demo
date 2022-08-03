@@ -1,0 +1,12 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+  application:
+    name: service-gateway-provider
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

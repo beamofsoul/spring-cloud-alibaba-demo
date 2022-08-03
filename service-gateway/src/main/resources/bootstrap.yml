@@ -1,0 +1,18 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+      config:
+        server-addr: ${spring.cloud.nacos.discovery.server-addr}
+        # gateway config
+        namespace: public
+        prefix: ${spring.application.name}
+        group: DEFAULT_GROUP
+        file-extension: yaml
+        # shared configs between services
+        shared-configs[0]:
+          data-id: data-source.yaml
+          refresh: true
+  application:
+    name: service-gateway

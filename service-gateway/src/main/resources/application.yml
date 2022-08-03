@@ -1,0 +1,23 @@
+server:
+  port: 8999
+#spring:
+#  cloud:
+#    gateway:
+#      discovery:
+#        locator:
+#          enabled: true
+#      loadbalancer:
+#        use404: true # when a service instance cannot be found, from 503 to 404
+#      routes:
+#      - id: nacos-route
+#        uri: lb://service-gateway-provider
+#        predicates:
+#          - Path=/nacos/**
+#        filters:
+#          - StripPrefix=1
+#      - id: v1-route
+#        uri: lb://service-provider
+#        predicates:
+#          - Path=/v1/**
+#        filters:
+#          - StripPrefix=1
