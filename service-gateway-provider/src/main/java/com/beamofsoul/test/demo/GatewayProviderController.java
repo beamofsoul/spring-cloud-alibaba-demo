@@ -14,6 +14,11 @@ public class GatewayProviderController {
         return "Hello Nacos Discovery " + string;
     }
 
+    @GetMapping("/flow")
+    public String flow() {
+        return "FLOW";
+    }
+
     @GetMapping("/divide")
     public String divide(@RequestParam Integer a, @RequestParam Integer b) {
         System.out.print("#");
