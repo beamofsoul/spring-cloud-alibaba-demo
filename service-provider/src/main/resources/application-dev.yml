@@ -1,7 +1,27 @@
+server:
+  port: 8081
 spring:
+  application:
+    name: service-provider
   cloud:
     nacos:
       discovery:
         server-addr: localhost:8848
-server:
-  port: 8081
+    # sentinel config
+    sentinel:
+      eager: true # disabled lazy-load mod
+      transport:
+        port: 8720
+        dashboard: localhost:8080
+      datasource:
+        flow-data:
+          nacos:
+            server-addr: ${spring.cloud.nacos.discovery.server-addr}
+            dataId: ${spring.application.name}-flow
+            groupId: DEFAULT_GROUP
+            rule-type: flow
+management:
+  endpoint:
+    web:
+      exposure:
+        include: "*"

@@ -3,8 +3,14 @@ spring:
     nacos:
       discovery:
         server-addr: localhost:8848
+    loadbalancer:
+      ribbon:
+        enabled: false # using spring-cloud-loadbalancer instead of ribbon
   application:
     name: service-gateway-provider
+feign:
+  sentinel:
+    enabled: true
 management:
   endpoints:
     web:
