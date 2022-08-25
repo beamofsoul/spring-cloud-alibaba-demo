@@ -22,8 +22,18 @@ public class GatewayProviderController {
     }
 
     @GetMapping("/flow")
-    public String flow() {
+    public String flow() throws InterruptedException {
         return "FLOW";
+    }
+
+    @GetMapping("/degrade")
+    public String degrade(@RequestParam Integer id) throws InterruptedException {
+        if (id % 2 == 0) { // 模拟时长，超过则降级场景
+            Thread.sleep(2000);
+//            throw new RuntimeException("异常数测试");
+        }
+        System.out.println("#");
+        return "DEGRADE";
     }
 
     @GetMapping("/divide")

@@ -20,11 +20,11 @@ spring:
       transport:
         port: 8719
         dashboard: localhost:8080
-      scg:
-        fallback:
-          mode: response # or redirect
-          response-status: 200
-          response-body: '{"code": 1304, "message": "链路过于繁忙，请稍后重试", "data": null}'
+#      scg:
+#        fallback:
+#          mode: response # or redirect
+#          response-status: 200
+#          response-body: '{"code": 1304, "message": "链路过于繁忙，请稍后重试", "data": null}'
       datasource:
         gw-api-group-data: # config api groups
           nacos:
@@ -38,6 +38,12 @@ spring:
             dataId: ${spring.application.name}-sentinel
             groupId: DEFAULT_GROUP
             rule-type: gw-flow
+        gw-degrade-data: # config degrade for specific api groups
+          nacos:
+            server-addr: ${spring.cloud.nacos.discovery.server-addr}
+            dataId: ${spring.application.name}-degrade
+            groupId: DEFAULT_GROUP
+            rule-type: degrade
   application:
     name: service-gateway
 management:
