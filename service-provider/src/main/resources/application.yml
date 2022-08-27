@@ -3,3 +3,8 @@ spring:
     name: service-provider
   profiles:
     active: dev
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

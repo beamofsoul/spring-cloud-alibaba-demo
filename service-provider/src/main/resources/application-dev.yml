@@ -20,8 +20,3 @@ spring:
             dataId: ${spring.application.name}-flow
             groupId: DEFAULT_GROUP
             rule-type: flow
-management:
-  endpoint:
-    web:
-      exposure:
-        include: "*"

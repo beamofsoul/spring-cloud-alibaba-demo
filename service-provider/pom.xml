@@ -20,7 +20,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-
         <!-- sentinel begin -->
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
@@ -31,6 +30,10 @@
             <artifactId>sentinel-datasource-nacos</artifactId>
         </dependency>
         <!-- sentinel end-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
     </dependencies>
 
 </project>

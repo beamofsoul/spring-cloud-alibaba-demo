@@ -47,7 +47,7 @@ spring:
   application:
     name: service-gateway
 management:
-  endpoint:
+  endpoints:
     web:
       exposure:
         include: "*"
