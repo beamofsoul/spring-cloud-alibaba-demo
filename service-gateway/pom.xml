@@ -10,25 +10,27 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>service-gateway</artifactId>
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>7</source>
-                    <target>7</target>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
 
     <dependencies>
-<!--        <dependency>-->
-<!--            <groupId>com.alibaba.csp</groupId>-->
-<!--            <artifactId>sentinel-spring-cloud-gateway-adapter</artifactId>-->
-<!--            <version>1.8.1</version>-->
-<!--        </dependency>-->
+        <!-- 版本升级后所需 begin -->
+        <dependency> <!-- 缓存loadbalancer数据 -->
+            <groupId>com.github.ben-manes.caffeine</groupId>
+            <artifactId>caffeine</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context-support</artifactId>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-bootstrap</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-loadbalancer</artifactId>
+        </dependency>
+        <!-- 版本升级后所需 end -->
         <!-- sentinel dependencies begin -->
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
@@ -43,10 +45,6 @@
             <groupId>com.alibaba.csp</groupId>
             <artifactId>sentinel-datasource-nacos</artifactId>
         </dependency>
-<!--        <dependency>-->
-<!--            <groupId>com.alibaba.csp</groupId>-->
-<!--            <artifactId>sentinel-parameter-flow-control</artifactId>-->
-<!--        </dependency>-->
         <!-- sentinel dependencies end -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>

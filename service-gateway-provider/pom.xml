@@ -12,6 +12,10 @@
     <artifactId>service-gateway-provider</artifactId>
 
     <dependencies>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-bootstrap</artifactId>
+        </dependency>
         <!-- sentinel: feign.sentinel.enabled:true begin -->
         <dependency>
             <groupId>com.alibaba.cloud</groupId>

@@ -22,7 +22,7 @@ public class GatewayProviderController {
     }
 
     @GetMapping("/flow")
-    public String flow() throws InterruptedException {
+    public String flow() {
         return "FLOW";
     }
 
