@@ -9,27 +9,18 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>service-provider</artifactId>
+    <artifactId>service-grpc-server</artifactId>
 
     <dependencies>
-        <!-- sentinel dependencies begin -->
         <dependency>
-            <groupId>com.alibaba.cloud</groupId>
-            <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
+            <groupId>com.beamofsoul.test</groupId>
+            <artifactId>grpc-greeting-api</artifactId>
+            <version>1.0</version>
+            <scope>compile</scope>
         </dependency>
-        <dependency>
-            <groupId>com.alibaba.csp</groupId>
-            <artifactId>sentinel-datasource-nacos</artifactId>
-        </dependency>
-        <!-- sentinel dependencies end-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-actuator</artifactId>
-        </dependency>
     </dependencies>
-
 </project>

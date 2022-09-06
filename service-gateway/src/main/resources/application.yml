@@ -1,81 +1,9 @@
 server:
   port: 8999
-#spring:
-#  cloud:
-#    gateway:
-#      discovery:
-#        locator:
-#          enabled: true
-#      loadbalancer:
-#        use404: true # when a service instance cannot be found, from 503 to 404
-#      routes:
-#      - id: nacos-route
-#        uri: lb://service-gateway-provider
-#        predicates:
-#          - Path=/nacos/**
-#        filters:
-#          - StripPrefix=1
-#      - id: v1-route
-#        uri: lb://service-provider
-#        predicates:
-#          - Path=/v1/**
-#        filters:
-#          - StripPrefix=1
-#spring:
-#  cloud:
-##    loadbalancer:
-##      cache:
-##        caffeine:
-##          spec: initialCapacity=500,expireAfterWrite=5s
-##        enabled: true
-#    nacos:
-#      discovery:
-#        server-addr: localhost:8848
-#      config:
-#        server-addr: ${spring.cloud.nacos.discovery.server-addr}
-#        # gateway config
-#        namespace: public
-#        prefix: ${spring.application.name}
-#        group: DEFAULT_GROUP
-#        file-extension: yaml
-#        # shared configs between services
-#        shared-configs[0]:
-#          data-id: data-source.yaml
-#          refresh: true
-#    # sentinel config
-#    sentinel:
-#      eager: true # disabled lazy-load mod
-#      transport:
-#        port: 8719
-#        dashboard: localhost:8080
-#      #      scg:
-#      #        fallback:
-#      #          mode: response # or redirect
-#      #          response-status: 200
-#      #          response-body: '{"code": 1304, "message": "链路过于繁忙，请稍后重试", "data": null}'
-#      datasource:
-#        gw-api-group-data: # config api groups
-#          nacos:
-#            server-addr: ${spring.cloud.nacos.discovery.server-addr}
-#            dataId: ${spring.application.name}-apis
-#            groupId: DEFAULT_GROUP
-#            rule-type: gw-api-group
-#        gw-flow-data: # config flow control for specific api groups
-#          nacos:
-#            server-addr: ${spring.cloud.nacos.discovery.server-addr}
-#            dataId: ${spring.application.name}-sentinel
-#            groupId: DEFAULT_GROUP
-#            rule-type: gw-flow
-#        gw-degrade-data: # config degrade for specific api groups
-#          nacos:
-#            server-addr: ${spring.cloud.nacos.discovery.server-addr}
-#            dataId: ${spring.application.name}-degrade
-#            groupId: DEFAULT_GROUP
-#            rule-type: degrade
-#  application:
-#    name: service-gateway
-#management:
-#  endpoint:
-#    web:
-#      exposure:
-#        include: "*"
+  http2:
+    enabled: true
+  ssl:
+    key-alias: justin
+    key-store: classpath:justin.p12
+    key-store-password: justin
+    key-store-type: PKCS12

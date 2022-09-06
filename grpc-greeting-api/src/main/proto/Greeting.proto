@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+
+package com.beamofsoul.test.demo.grpc;
+
+service Greeting {
+  rpc sayHello (GreetingRequest) returns (GreetingResponse);
+}
+
+message GreetingRequest {
+  string name = 1;
+}
+
+message GreetingResponse {
+  string message = 1;
+}

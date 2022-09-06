@@ -1,8 +1,11 @@
 spring:
+  application:
+    name: service-gateway
   cloud:
     nacos:
       discovery:
         server-addr: localhost:8848
+        secure: true
       config:
         server-addr: ${spring.cloud.nacos.discovery.server-addr}
         # gateway config
@@ -44,8 +47,6 @@ spring:
             dataId: ${spring.application.name}-degrade
             groupId: DEFAULT_GROUP
             rule-type: degrade
-  application:
-    name: service-gateway
 management:
   endpoints:
     web:

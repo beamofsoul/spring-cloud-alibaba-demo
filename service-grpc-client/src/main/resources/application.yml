@@ -1,0 +1,23 @@
+server:
+  port: 8183
+  http2:
+    enabled: true
+  ssl:
+    key-alias: justin
+    key-store: classpath:justin.p12
+    key-store-password: justin
+    key-store-type: PKCS12
+spring:
+  application:
+    name: service-grpc-client
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+        secure: true
+grpc:
+  server:
+    port: 0
+  client:
+    GLOBAL:
+      negotiation-type: TLS
