@@ -21,3 +21,4 @@ grpc:
   client:
     GLOBAL:
       negotiation-type: TLS
+      default-load-balancing-policy: custom_round_robin
